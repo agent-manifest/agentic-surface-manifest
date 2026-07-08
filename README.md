@@ -1,57 +1,66 @@
 # Agentic Surface Manifest
 
-Agentic Surface Manifest (ASM) is a declarative specification for digital surfaces that may be consumed by AI agents, agentic systems, or model-driven tools.
+Status: research incubation.
 
-It complements Agent Manifest.
+This repository investigates whether exposed digital surfaces consumed by AI agents require a standalone manifest, an extension to existing protocols, or a vocabulary profile for existing standards.
 
-Agent Manifest declares actors.
+No production specification is currently proposed.
 
-Agentic Surface Manifest declares resources.
-
-## Why this exists
+## Research question
 
 Modern AI agents can invoke APIs, tools, MCP servers, web interfaces, and machine-readable services at runtime.
 
-In many cases, the exposed service is not an agent. It does not pursue goals, initiate actions, or exercise autonomy. It is a surface consumed by agents.
+In many cases, the exposed service is not itself an agent. It may be a resource, endpoint, tool, API, or surface consumed by agents.
 
-Those surfaces still need a declaration layer.
+The question of this repository is:
 
-They need to state:
+> What, if anything, should such exposed surfaces declare before they are consumed by agentic systems?
 
-- whether agentic consumption is allowed, restricted, or disallowed;
-- what the surface exposes;
-- how machine-readable descriptions are versioned and protected;
-- what outputs may or may not contain;
-- how inputs are handled;
-- how access can be revoked;
-- who is responsible.
+## Current direction
 
-## Actor-side and resource-side declaration
+This work is exploratory.
 
-Agent Manifest addresses actor-side declaration.
+It will compare possible approaches, including:
 
-Agentic Surface Manifest addresses resource-side declaration.
+- extensions to existing AI preference vocabularies;
+- MCP tool annotations;
+- ODRL profiles;
+- machine-readable terms of use;
+- and, only if necessary, a standalone Agentic Surface Manifest.
 
-Together, they form a two-sided declaration layer for agentic interaction.
+## Relationship to Agent Manifest
 
-## Core idea
+Agent Manifest declares actors.
 
-A surface becomes agentic when decisions to invoke or interpret it are made by an automatic reasoning system at runtime, using machine-readable descriptions as operational input.
+This repository studies whether a separate resource-side declaration is needed for exposed surfaces.
 
-The key question is not whether a service uses AI internally.
+No changes to Agent Manifest v1.0 are implied by this repository.
 
-The key question is who decides to invoke it.
+## Non-goals
+
+This repository does not define:
+
+- agent execution;
+- communication protocols;
+- discovery mechanisms;
+- authorization systems;
+- verification or attestation;
+- enforcement;
+- scoring;
+- transport.
+
+It investigates declaration only.
 
 ## Status
 
-Early draft.
+Early research incubation.
 
-This repository is exploratory and pre-standardization.
+Everything may change.
 
-No production conformance claims should be made yet.
+Do not make production conformance claims based on this repository.
 
 ## License
 
-Code, schemas, and tooling are licensed under Apache-2.0.
+Code, schemas, examples, and tooling are licensed under Apache-2.0.
 
-Specification text and documentation are intended to be made available under CC BY 4.0 unless otherwise noted.
+Specification prose and documentation are intended to be licensed under CC BY 4.0 unless otherwise noted.
