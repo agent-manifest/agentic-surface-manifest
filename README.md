@@ -7,23 +7,23 @@ Nothing here is normative, stable, or ready for adoption.
 
 This repository investigates one question:
 
-> How should digital services declare the terms under which AI agents may invoke them at runtime — and should that declaration become part of an existing standard or require something new?
+> How should digital services declare the terms under which automated reasoning systems may invoke them at runtime—and should those declarations become part of existing standards or require new standardization work?
 
 The answer is intentionally unknown.
 
-Evidence, not prior assumptions, determines the outcome.
+Evidence, rather than prior assumptions, determines the outcome.
 
 ---
 
 ## Why this repository exists
 
-Modern AI systems increasingly invoke external services at runtime:
+Modern automated systems increasingly invoke external services at runtime:
 
 - APIs
 - MCP servers
 - machine-readable tools
 - transactional web interfaces
-- other digital resources
+- other digital services and interfaces
 
 From the provider's perspective, an important question emerges:
 
@@ -32,7 +32,7 @@ From the provider's perspective, an important question emerges:
 Examples include:
 
 - whether automated invocation is allowed, restricted, or disallowed;
-- how inputs are handled;
+- how submitted inputs are handled;
 - who is responsible for the service;
 - how access may be revoked;
 - what governance information should be available to consumers.
@@ -45,10 +45,10 @@ Whether these declarations belong in a new specification—or inside existing st
 
 Current work focuses on:
 
-- the provider-side perspective of agentic interaction;
+- the provider-side perspective of automated service invocation;
 - existing standards and protocols;
 - identification of genuine gaps, if any;
-- vocabulary that could be contributed to existing ecosystems.
+- candidate vocabulary that could be contributed to existing ecosystems.
 
 The repository deliberately starts from the assumption that **no new standard should be created unless existing standards are demonstrably insufficient.**
 
@@ -62,9 +62,9 @@ Research currently evaluates work including:
 - TDM Reservation Protocol (TDMRep)
 - W3C ODRL
 - Model Context Protocol (MCP)
-- robots.txt and RFC 9309
-- AI-era robots extensions
-- A2A Agent Cards
+- Robots Exclusion Protocol (RFC 9309)
+- AI-related robots extensions
+- Agent2Agent (A2A)
 - identity and credential frameworks
 
 The objective is to understand what already exists before proposing anything new.
@@ -76,7 +76,7 @@ The objective is to understand what already exists before proposing anything new
 This research may ultimately produce:
 
 - a proposal to an existing standard;
-- a profile of an existing specification;
+- a profile for an existing specification;
 - a vocabulary contribution;
 - recommendations only;
 - or no new specification at all.
@@ -89,7 +89,7 @@ No outcome is predetermined.
 
 Agent Manifest studies declarations made by autonomous actors.
 
-This repository investigates the declaration needs of digital resources consumed by those actors.
+This repository investigates the declaration needs of the services and interfaces consumed by those actors.
 
 Whether those concerns deserve their own artifact—or belong inside existing standards—remains an open research question.
 
@@ -97,10 +97,8 @@ Whether those concerns deserve their own artifact—or belong inside existing st
 
 ## Current contents
 
-- research notes
-- prior-art analysis
-- gap analysis
-- candidate vocabulary (non-normative)
+- `docs/provider-side-declaration-survey.md`
+- `docs/research-notes.md`
 
 ---
 
