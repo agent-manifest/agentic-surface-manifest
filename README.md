@@ -98,7 +98,6 @@ Whether those concerns deserve their own artifact—or belong inside existing st
 ## Current contents
 
 - `docs/provider-side-declaration-survey.md`
-- `docs/research-notes.md`
 
 ---
 
