@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata in this file."
+type: software
+title: "Agentic Surface Research"
+authors:
+  - family-names: "Capucci"
+    given-names: "Hernán Alfredo"
+    orcid: "https://orcid.org/0009-0008-7216-3032"
+# Code is licensed under Apache-2.0 (LICENSE); documentation and research
+# material are licensed under CC BY 4.0 (LICENSE-DOCS.md).
+license:
+  - Apache-2.0
+  - CC-BY-4.0
