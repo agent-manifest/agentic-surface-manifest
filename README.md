@@ -103,9 +103,9 @@ Whether those concerns deserve their own artifact—or belong inside existing st
 
 ## License
 
-Documentation and research material are licensed under CC BY 4.0.
+Code is licensed under Apache-2.0 (see `LICENSE`).
 
-Any future schemas, examples, or tooling will be licensed under Apache-2.0.
+Documentation and research material are licensed under CC BY 4.0 (see `LICENSE-DOCS.md`).
 
 ---
 
